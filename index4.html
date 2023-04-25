@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas audio e vídeo</title>
+</head>
+<body>
+    <h2>imagens que se adaptam sozinhas</h2>
+     <picture>
+        <source media="(min-width: 1050px)" srcset="fotoG.jpg" type="image/jpg">
+        <source media="(min-width: 750px)" srcset="fotoM.jpg" type="image/jpg">
+        <img src="fotoP.jpg" alt="homem sorrindo">
+     </picture>
+    <h2>audio</h2>
+    <audio src="guanacast-33.mp3" controls></audio>
+    <h2>jeito certo audio</h2>
+    <audio controls preload="metadata"> 
+        <source src="guanacast-33.mp3" type="audio/mpeg">
+        <source src="guanacast-33.mp3" type="audio/ogg">
+        <source src="guanacast-33.mp3" type="audio/wav">
+        <p>seu navegador não é compativel, <a href="guanacast-33.mp3">baixe o audio</a> </p>
+    </audio>
+    <h2>video</h2>
+    <video width="700" controls poster="fotoperfil.jpg" autoplay loop> 
+        <source src="videowebm.webm.webm" type="video/webm">
+        <source src="videoogv.ogv.ogv" type="video/ogv">
+        <source src="videomp4.mp4.mp4" type="video/mp4">
+        <p>seu navegador não tem compatibilidade</p>
+    </video>
+    <h2>videos do youtube</h2>
+    <iframe width="500" height="350" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>videos do vimeo</h2>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/783453912?h=b9260604e5" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+
+    
+</body>
+</html>
